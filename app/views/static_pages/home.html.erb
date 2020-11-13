@@ -1,3 +1,8 @@
 
-<h1>This is my home page</h1>
-<p>Now i have Home)</p>
+<div class="center jumbotron">
+    <h1>This is my home page</h1>
+    <p>Now i have Home)</p>
+    <%= link_to "Sign up now!", signin_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to image_tag("rails.png", alt: "Rails logo"),
+                'http://rubyonrails.org/' %>
+</div>
