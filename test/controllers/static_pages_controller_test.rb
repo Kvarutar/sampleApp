@@ -2,9 +2,9 @@ require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get static_pages_home_url
+    get root_url
     assert_response :success
-    assert_select "title", "Home | Ruby on Rails Tutorial Sample App"#этот код проверяет наличие на странице тэга title с содержимым внутри
+    assert_select "title", "Ruby on Rails Tutorial Sample App"#этот код проверяет наличие на странице тэга title с содержимым внутри
   end
 
   test "should get help" do
